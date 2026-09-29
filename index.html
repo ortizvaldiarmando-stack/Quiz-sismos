@@ -107,12 +107,12 @@ body {
     <div id="quizStart">
         <div class="header">
             <h1>Quiz de Sismos</h1>
-            <p>Prueba tus conocimientos sobre sismos en Mexico</p>
+            <p>Prueba tus conocimientos sobre sismos en México</p>
         </div>
         <div style="text-align:center; margin:24px 0;">
             <p style="color:var(--soft); font-size:.9rem; line-height:1.6;">
-                Este quiz contiene <strong>10 preguntas</strong> sobre sismos, zonas de riesgo, protocolos de seguridad y prevencion.<br><br>
-                Al final recibiras tu calificacion con retroalimentacion.
+                Este quiz contiene <strong>10 preguntas</strong> sobre sismos, zonas de riesgo, protocolos de seguridad y prevención.<br><br>
+                Al final recibirás tu calificación con retroalimentación.
             </p>
         </div>
         <button class="btn btn-primary" onclick="startQuiz()">Comenzar quiz</button>
@@ -147,64 +147,64 @@ body {
 <script>
 const questions = [
     {
-        q: "Que escala mide la intensidad de un sismo segun los danos causados en las personas y las estructuras?",
+        q: "¿Qué escala mide la intensidad de un sismo según los daños causados en las personas y las estructuras?",
         options: ["Escala de Richter","Escala de Mercalli","Escala de Beaufort","Escala de Saffir-Simpson"],
         correct: 1,
-        explanation: "La Escala de Mercalli mide la intensidad (los efectos y danos), mientras que la de Richter mide la magnitud (energia liberada)."
+        explanation: "La Escala de Mercalli mide la intensidad (los efectos y daños), mientras que la de Richter mide la magnitud (energía liberada)."
     },
     {
-        q: "Cual es la zona de mayor riesgo sismico en Mexico?",
-        options: ["Peninsula de Yucatan","Costa del Pacifico","Golfo de Mexico","Altiplano central"],
+        q: "¿Cuál es la zona de mayor riesgo sísmico en México?",
+        options: ["Península de Yucatán","Costa del Pacífico","Golfo de México","Altiplano central"],
         correct: 1,
-        explanation: "La costa del Pacifico (Guerrero, Oaxaca, Chiapas) es la zona de mayor sismicidad por la subduccion de la placa de Cocos bajo la de Norteamerica."
+        explanation: "La costa del Pacífico (Guerrero, Oaxaca, Chiapas) es la zona de mayor sismicidad por la subducción de la placa de Cocos bajo la de Norteamérica."
     },
     {
-        q: "Cual es el protocolo oficial de seguridad durante un sismo?",
-        options: ["Correr y salir del edificio","Agacharse, cubrirse y agarrarse","Llamar por telefono a todos","Subir a la azotea"],
+        q: "¿Cuál es el protocolo oficial de seguridad durante un sismo?",
+        options: ["Correr y salir del edificio","Agacharse, cubrirse y agarrarse","Llamar por teléfono a todos","Subir a la azotea"],
         correct: 1,
-        explanation: "Agacharse, cubrirse y agarrarse a un mueble firme es el protocolo reconocido internacionalmente. Correr durante un sismo es mas peligroso."
+        explanation: "Agacharse, cubrirse y agarrarse a un mueble firme es el protocolo reconocido internacionalmente. Correr durante un sismo es más peligroso."
     },
     {
-        q: "Que significa WSW en el reporte de un sismo?",
+        q: "¿Qué significa WSW en el reporte de un sismo?",
         options: ["Wide South-West","West-Southwest (Oeste-Suroeste)","Warning Seismic Wave","Wide Seismic Warning"],
         correct: 1,
-        explanation: "WSW significa West-Southwest, que en espanol es Oeste-Suroeste. Indica la direccion del epicentro respecto a una ciudad de referencia."
+        explanation: "WSW significa West-Southwest, que en español es Oeste-Suroeste. Indica la dirección del epicentro respecto a una ciudad de referencia."
     },
     {
-        q: "Que tipo de suelo amplifica mas las ondas sismicas?",
+        q: "¿Qué tipo de suelo amplifica más las ondas sísmicas?",
         options: ["Roca firme","Suelo arenoso compacto","Suelo blando o arcilloso","Suelo de grava"],
         correct: 2,
-        explanation: "Los suelos blandos o arcillosos amplifican mas las ondas sismicas. Por eso la zona del lago en la CDMX es especialmente peligrosa."
+        explanation: "Los suelos blandos o arcillosos amplifican más las ondas sísmicas. Por eso la zona del lago en la CDMX es especialmente peligrosa."
     },
     {
-        q: "Que placa tectonica provoca los sismos mas intensos en el sur de Mexico?",
-        options: ["Placa del Pacifico","Placa de Cocos","Placa de Norteamerica","Placa del Caribe"],
+        q: "¿Qué placa tectónica provoca los sismos más intensos en el sur de México?",
+        options: ["Placa del Pacífico","Placa de Cocos","Placa de Norteamérica","Placa del Caribe"],
         correct: 1,
-        explanation: "La placa de Cocos se introduce (subduce) bajo la placa de Norteamerica a lo largo de la costa del Pacifico mexicano, generando sismos de gran magnitud."
+        explanation: "La placa de Cocos se introduce (subduce) bajo la placa de Norteamérica a lo largo de la costa del Pacífico mexicano, generando sismos de gran magnitud."
     },
     {
-        q: "Que magnitud minima se considera para activar una alerta sismica fuerte?",
+        q: "¿Qué magnitud mínima se considera para activar una alerta sísmica fuerte?",
         options: ["Magnitud 2.0","Magnitud 3.0","Magnitud 4.5","Magnitud 6.0"],
         correct: 2,
-        explanation: "Se considera que un sismo de magnitud 4.5 o superior puede causar danos y amerita alerta inmediata."
+        explanation: "Se considera que un sismo de magnitud 4.5 o superior puede causar daños y amerita alerta inmediata."
     },
     {
-        q: "Que aplicacion o sistema oficial emite alertas sismicas en Mexico?",
+        q: "¿Qué aplicación o sistema oficial emite alertas sísmicas en México?",
         options: ["SASMEX","Google Maps","Weather Channel","Siri"],
         correct: 0,
-        explanation: "El SASMEX (Sistema de Alerta Sismica Mexicano), operado por CIRES, es el sistema oficial de alerta temprana en Mexico."
+        explanation: "El SASMEX (Sistema de Alerta Sísmica Mexicano), operado por CIRES, es el sistema oficial de alerta temprana en México."
     },
     {
-        q: "Que ano ocurrio el sismo mas recordado en la Ciudad de Mexico con magnitud 8.1?",
+        q: "¿En qué año ocurrió el sismo más recordado en la Ciudad de México con magnitud 8.1?",
         options: ["1975","1985","1995","2005"],
         correct: 1,
-        explanation: "El sismo del 19 de septiembre de 1985 tuvo magnitud 8.1, devasto la Ciudad de Mexico y marco un antes y despues en la cultura de proteccion civil."
+        explanation: "El sismo del 19 de septiembre de 1985 tuvo magnitud 8.1, devastó la Ciudad de México y marcó un antes y un después en la cultura de protección civil."
     },
     {
-        q: "Que accion NO debes hacer durante un sismo?",
+        q: "¿Qué acción NO debes hacer durante un sismo?",
         options: ["Cubrirte la cabeza","Usar los ascensores","Alejarte de ventanas","Ubicarte bajo una mesa firme"],
         correct: 1,
-        explanation: "Nunca uses los ascensores durante un sismo. Podrian quedarse atorados o caer por fallas electricas."
+        explanation: "Nunca uses los ascensores durante un sismo. Podrían quedarse atorados o caer por fallas eléctricas."
     }
 ];
 
@@ -296,7 +296,7 @@ function showResult() {
     if (percent >= 90) {
         message = 'Excelente. Dominas perfectamente el tema de sismos.';
     } else if (percent >= 70) {
-        message = 'Muy bien. Tienes una buena comprension del tema.';
+        message = 'Muy bien. Tienes una buena comprensión del tema.';
     } else if (percent >= 50) {
         message = 'Aprobado. Te recomendamos repasar algunos conceptos.';
     } else {
